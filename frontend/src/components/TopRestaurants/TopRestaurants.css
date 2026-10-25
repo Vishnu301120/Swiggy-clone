@@ -1,0 +1,36 @@
+.topRestaurants {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topHeader h2 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.restaurantSlider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 4px 20px;
+  scrollbar-width: none;
+}
+
+.restaurantSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.topRestItemWrapper {
+  flex: 0 0 280px;
+  max-width: 280px;
+}

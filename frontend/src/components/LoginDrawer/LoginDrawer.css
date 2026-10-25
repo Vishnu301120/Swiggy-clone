@@ -1,0 +1,356 @@
+.swiggyDrawerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(40, 44, 63, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  animation: swiggyFadeIn 0.2s ease;
+}
+
+@keyframes swiggyFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.swiggyDrawer {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 100%;
+  max-width: 460px;
+  height: 100vh;
+  background: #ffffff;
+  color: #282c3f;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.2);
+  z-index: 2001;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.swiggyDrawer.open {
+  right: 0;
+}
+
+/* Dark mode drawer background */
+.dark .swiggyDrawer {
+  background: #1c1f26;
+  color: #f3f4f6;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.6);
+}
+
+.drawerTopClose {
+  padding: 32px 36px 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.swiggyCloseIconBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #282c3f;
+  line-height: 1;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.dark .swiggyCloseIconBtn {
+  color: #f3f4f6;
+}
+
+.swiggyCloseIconBtn:hover {
+  transform: scale(1.15);
+  color: #fc8019;
+}
+
+.swiggyDrawerBody {
+  padding: 16px 36px 36px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Header Row */
+.swiggyTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.titleCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHeading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #282c3f;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.dark .mainHeading {
+  color: #f3f4f6;
+}
+
+.subHeading {
+  font-size: 13.5px;
+  color: #686b78;
+  font-weight: 500;
+}
+
+.dark .subHeading {
+  color: #9ca3af;
+}
+
+.switchOrangeLink,
+.editPhoneLink {
+  background: none;
+  border: none;
+  color: #fc8019;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 13.5px;
+  text-decoration: none;
+}
+
+.switchOrangeLink:hover,
+.editPhoneLink:hover {
+  text-decoration: underline;
+}
+
+.titleUnderline {
+  width: 32px;
+  height: 2px;
+  background: #282c3f;
+  margin-top: 16px;
+}
+
+.dark .titleUnderline {
+  background: #f3f4f6;
+}
+
+/* Right circular wrap illustration */
+.illustrationCol {
+  flex-shrink: 0;
+}
+
+.foodIconCircle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: #fdf5ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(252, 128, 25, 0.12);
+  border: 1px solid rgba(252, 128, 25, 0.15);
+}
+
+.dark .foodIconCircle {
+  background: #2b2520;
+  border-color: rgba(252, 128, 25, 0.25);
+}
+
+.wrapGraphic {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  transform: rotate(-8deg);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+/* Errors & OTP Helper */
+.swiggyErrorMsg {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 18px;
+  border-left: 3px solid #ef4444;
+}
+
+.otpHelperBanner {
+  background: rgba(252, 128, 25, 0.1);
+  border: 1px dashed #fc8019;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #282c3f;
+}
+
+.dark .otpHelperBanner {
+  color: #f3f4f6;
+}
+
+.autofillOtpBtn {
+  background: #fc8019;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Inputs */
+.swiggyAuthForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiggyInputBox {
+  border: 1px solid #d4d5d9;
+  background: #ffffff;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark .swiggyInputBox {
+  background: #242933;
+  border-color: #374151;
+}
+
+.swiggyInputBox:focus-within {
+  border-color: #fc8019;
+  box-shadow: 0 2px 8px rgba(252, 128, 25, 0.15);
+}
+
+.cleanInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #282c3f;
+  font-weight: 500;
+  background: transparent;
+}
+
+.dark .cleanInput {
+  color: #f3f4f6;
+}
+
+.cleanInput::placeholder {
+  color: #93959f;
+  font-weight: 400;
+}
+
+.otpInput {
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Orange Login Button */
+.swiggyOrangeSubmitBtn {
+  width: 100%;
+  height: 50px;
+  background: #fc8019;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 16px;
+  border-radius: 0;
+}
+
+.swiggyOrangeSubmitBtn:hover:not(:disabled) {
+  background: #e06d0e;
+}
+
+.swiggyOrangeSubmitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.swiggyTermsText {
+  font-size: 11.5px;
+  color: #686b78;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.dark .swiggyTermsText {
+  color: #9ca3af;
+}
+
+.swiggyTermsText strong {
+  color: #282c3f;
+  font-weight: 600;
+}
+
+.dark .swiggyTermsText strong {
+  color: #f3f4f6;
+}
+
+.resendOtpRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #686b78;
+}
+
+.resendOtpBtn {
+  background: none;
+  border: none;
+  color: #fc8019;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.swiggyDemoOption {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed #e2e8f0;
+  text-align: center;
+}
+
+.dark .swiggyDemoOption {
+  border-top-color: #374151;
+}
+
+.quickDemoLoginBtn {
+  background: transparent;
+  border: 1px solid #1ba672;
+  color: #1ba672;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quickDemoLoginBtn:hover {
+  background: #1ba672;
+  color: #ffffff;
+}

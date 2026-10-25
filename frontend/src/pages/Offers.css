@@ -1,0 +1,229 @@
+.offersPage {
+  max-width: 1100px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+}
+
+.offersHero {
+  background: linear-gradient(135deg, #fc8019 0%, #ff5252 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin-bottom: 36px;
+  box-shadow: 0 8px 24px rgba(252, 128, 25, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heroTag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+}
+
+.offersHero h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.offersHero p {
+  font-size: 16px;
+  opacity: 0.95;
+  max-width: 650px;
+}
+
+.sectionTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.secIcon {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.sectionTitleRow h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.paymentSecTitle {
+  margin-top: 40px;
+}
+
+.couponsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.couponCardModern {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.couponCardModern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.couponLeftBorder {
+  width: 8px;
+  flex-shrink: 0;
+}
+
+.couponCardContent {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.couponTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.couponDiscount {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.minOrderTag {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.couponDesc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.minOrderDesc {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.couponActionRow {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.couponCodeBadge {
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.copyCouponBtn {
+  background: var(--primary);
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition);
+}
+
+.copyCouponBtn:hover {
+  background: var(--primary-hover);
+}
+
+.copyCouponBtn.copied {
+  background: var(--secondary);
+}
+
+.paymentOffersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.bankCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--card-shadow);
+}
+
+.bankCard h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.bankCard p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.offersCtaBanner {
+  background: var(--bg-surface);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.offersCtaBanner h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.offersCtaBanner p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.exploreFoodBtn {
+  margin-top: 8px;
+  background: var(--primary);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}

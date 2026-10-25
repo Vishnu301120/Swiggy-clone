@@ -1,0 +1,378 @@
+.cart-page {
+  max-width: 1100px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+}
+
+.cartHeader h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin-bottom: 24px;
+}
+
+.cartLayout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.cartItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itemsCard, .availableCouponsCard, .couponCard, .billDetailsCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--card-shadow);
+}
+
+.itemsCard h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cartItemRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.cartItemRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.itemThumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.itemThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.itemNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cartItemName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.cartItemPrice {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.cartQtyControls {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--secondary);
+  background: var(--bg-card);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  padding: 4px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.qtyBtn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.qtyNum {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--secondary);
+  padding: 0 4px;
+}
+
+.itemTotalCol {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.itemRowTotal {
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 60px;
+  text-align: right;
+}
+
+.deleteItemBtn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.deleteItemBtn:hover {
+  color: #ef4444;
+}
+
+.availableCouponsCard {
+  background: rgba(252, 128, 25, 0.05);
+  border-color: rgba(252, 128, 25, 0.2);
+}
+
+.couponBannerTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.couponPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.couponPill {
+  background: var(--bg-card);
+  border: 1px dashed var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.couponPill:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.billSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.couponCard h3, .billDetailsCard h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.couponInputRow {
+  display: flex;
+  gap: 10px;
+}
+
+.couponInputRow input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.applyBtn {
+  background: var(--secondary);
+  color: white;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: var(--transition);
+}
+
+.applyBtn:hover {
+  background: var(--secondary-hover);
+}
+
+.appliedCouponBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(27, 166, 114, 0.1);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary);
+}
+
+.appliedCouponBox strong {
+  display: block;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.appliedCouponBox small {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.removeCouponBtn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.billRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.freeTag {
+  background: var(--secondary);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.discountRow {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.billDivider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 16px 0;
+}
+
+.grandTotalRow {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.checkoutProceedBtn {
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(252, 128, 25, 0.35);
+  transition: var(--transition);
+}
+
+.checkoutProceedBtn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.empty-cart-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.emptyCartCard {
+  text-align: center;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.emptyIconWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(252, 128, 25, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.emptyBagIcon {
+  font-size: 36px;
+  color: var(--primary);
+}
+
+.emptyCartCard h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.emptyCartCard p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.seeRestaurantsBtn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .cartLayout {
+    grid-template-columns: 1fr;
+  }
+}

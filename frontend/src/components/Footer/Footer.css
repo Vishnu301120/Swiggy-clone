@@ -1,0 +1,394 @@
+footer {
+  margin-top: 80px;
+  background: #f1f2f4;
+  border-top: 1px solid #e2e8f0;
+  font-family: inherit;
+}
+
+/* APP DOWNLOAD SECTION */
+.downloadSection {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 32px;
+}
+
+.downloadText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.downloadText h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+}
+
+.partnerActionBtn {
+  background: #fc8019;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(252, 128, 25, 0.3);
+}
+
+.partnerActionBtn:hover {
+  background: #e66a06;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(252, 128, 25, 0.4);
+}
+
+/* Store Buttons Group */
+.storeActionGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.storeButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.storeBadgeLink {
+  display: inline-block;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.storeBadgeLink img {
+  height: 52px;
+  width: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.storeBadgeLink:hover {
+  transform: translateY(-3px) scale(1.03);
+  filter: brightness(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.storeBadgeLink:active {
+  transform: translateY(-1px) scale(1.01);
+}
+
+/* QR Code Trigger Button */
+.qrCodeTriggerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.qrCodeTriggerBtn:hover {
+  background: #f8fafc;
+  color: #fc8019;
+  border-color: #fc8019;
+  transform: translateY(-1px);
+}
+
+.qrIcon {
+  font-size: 15px;
+  color: #fc8019;
+}
+
+/* FOOTER CONTENT */
+.footerContent {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+  gap: 36px;
+  padding: 50px 0 60px 0;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footerLogo {
+  width: 48px;
+  height: auto;
+}
+
+.brandCol h2 {
+  color: #fc8019;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.copyrightText {
+  color: #64748b;
+  font-size: 14px;
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+.tagline {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.footerContent h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+  letter-spacing: -0.2px;
+}
+
+.footerContent p,
+.footerNavLink {
+  display: block;
+  margin-bottom: 12px;
+  color: #64748b;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footerContent p:hover,
+.footerNavLink:hover {
+  color: #fc8019;
+  transform: translateX(2px);
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 14px;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.socialIconLink {
+  color: #64748b;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+}
+
+.socialIconLink:hover {
+  color: #ffffff;
+  background: #fc8019;
+  border-color: #fc8019;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(252, 128, 25, 0.3);
+}
+
+/* MODAL STYLES */
+.footerModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footerModalContent {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f1f5f9;
+  border: none;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.closeModalBtn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.footerModalContent h3 {
+  font-size: 20px;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footerModalContent p {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* QR Modal Specifics */
+.qrModal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigQrIcon {
+  font-size: 32px;
+  color: #fc8019;
+  margin-bottom: 8px;
+}
+
+.qrMockContainer {
+  background: #f8fafc;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.generatedQrImg {
+  width: 170px;
+  height: 170px;
+  display: block;
+}
+
+.modalBadgeLinks {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modalBadgeLinks a {
+  color: #fc8019;
+  text-decoration: none;
+}
+
+.modalBadgeLinks a:hover {
+  text-decoration: underline;
+}
+
+.modalBadgeLinks .dot {
+  color: #cbd5e1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .downloadSection {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .downloadText h2 {
+    font-size: 22px;
+  }
+
+  .smsLinkForm {
+    justify-content: center;
+  }
+
+  .storeActionGroup {
+    align-items: center;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
+
+  .storeButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .storeBadgeLink img {
+    height: 48px;
+  }
+}

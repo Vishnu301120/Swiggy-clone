@@ -1,0 +1,229 @@
+.checkout-page {
+  max-width: 1080px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+}
+
+.checkoutHeader {
+  margin-bottom: 24px;
+}
+
+.checkoutHeader h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.checkoutHeader p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.delivery-form-card, .order-summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sectionIcon {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.cardHeaderRow h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.paymentHeader {
+  margin-top: 30px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputField label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.inputField input, .inputField textarea {
+  padding: 11px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.paymentOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paymentCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.paymentCard:hover {
+  border-color: var(--primary);
+}
+
+.paymentCard.selected {
+  border-color: var(--primary);
+  background: rgba(252, 128, 25, 0.05);
+}
+
+.paymentCard input {
+  accent-color: var(--primary);
+  width: 18px;
+  height: 18px;
+}
+
+.paymentInfo strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.paymentInfo small {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.order-summary-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summaryItemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.summaryItemTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.summaryItemPrice {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.summaryBill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.billLine {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.discountLine {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.summaryBill hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 6px 0;
+}
+
+.totalLine {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.placeOrderSubmitBtn {
+  width: 100%;
+  margin-top: 20px;
+  background: var(--secondary);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(27, 166, 114, 0.35);
+  transition: var(--transition);
+}
+
+.placeOrderSubmitBtn:hover:not(:disabled) {
+  background: var(--secondary-hover);
+  transform: translateY(-2px);
+}
+
+.placeOrderSubmitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}
